@@ -7,8 +7,9 @@
 	- Array
 	- OOP
 	- JDBC
-2. Membuat aplikasi dengan maven ( Version control )
-3. Menggunakan framework spring
-4. Menggunakan angular js,html,css,bootstrap
-5. Membuat aplikasi desktop ( CRUD )
-6. Membuat aplikasi web ( CRUD )
+2. Membuat aplikasi dengan maven 
+3. Belajar Git
+4. Menggunakan framework spring
+5. Menggunakan angular js,html,css,bootstrap
+6. Membuat aplikasi desktop ( CRUD )
+7. Membuat aplikasi web ( CRUD )
