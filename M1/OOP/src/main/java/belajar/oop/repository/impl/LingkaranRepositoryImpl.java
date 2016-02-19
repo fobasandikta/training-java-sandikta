@@ -17,7 +17,7 @@ public class LingkaranRepositoryImpl implements LingkaranRepository {
 
     @Override
     public double luasLingkaran(LingkaranModel lm) {
-        double pangkat = Math.pow(lm.getPhi(), 2);
+        double pangkat = Math.pow(lm.getR(), 2);
         double hasil = lm.getPhi() * pangkat;
         return hasil;
     }
