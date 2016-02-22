@@ -3,6 +3,7 @@ package belajar.jdbc.controller;
 import belajar.jdbc.domain.Siswa;
 import belajar.jdbc.repository.SiswaRepository;
 import belajar.jdbc.repository.impl.SiswaRepositoryImpl;
+import java.util.List;
 
 /**
  *
@@ -24,10 +25,27 @@ public class SiswaController {
     }
 
     public void update() {
-        //insert code here
+        sr.update(s);
+        System.out.println("\nData berhasil diupdate \n");
     }
 
     public void delete() {
-        //insert code here
+        sr.delete(s);
+        System.out.println("\nData berhasil didelete \n");
+    }
+
+    public List<Siswa> tampilSiswa() {
+        List<Siswa> dataSiswa = sr.getAllSiswa();
+        for (Siswa s : dataSiswa) {
+            System.out.println("-----------------------");
+            System.out.println("ID      : "+s.getId());
+            System.out.println("Nama    : "+s.getNama());
+            System.out.println("Kelas   : "+s.getKelas());
+            System.out.println("Alamat  : "+s.getAlamat());
+            System.out.println("------------------------");
+            
+        }
+        return sr.getAllSiswa();
+
     }
 }
