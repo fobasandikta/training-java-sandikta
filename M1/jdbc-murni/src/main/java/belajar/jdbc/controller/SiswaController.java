@@ -36,13 +36,14 @@ public class SiswaController {
 
     public List<Siswa> tampilSiswa() {
         List<Siswa> dataSiswa = sr.getAllSiswa();
+        
         for (Siswa s : dataSiswa) {
             System.out.println("-----------------------");
             System.out.println("ID      : "+s.getId());
             System.out.println("Nama    : "+s.getNama());
             System.out.println("Kelas   : "+s.getKelas());
             System.out.println("Alamat  : "+s.getAlamat());
-            System.out.println("------------------------");
+            
             
         }
         return sr.getAllSiswa();

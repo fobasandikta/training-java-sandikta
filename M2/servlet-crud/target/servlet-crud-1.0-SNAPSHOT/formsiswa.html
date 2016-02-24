@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Data Input Siswa</title>
+    </head>
+    <body>
+        <h1>FORM INPUT SISWA</h1>
+        <form method="POST" action="save">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td><input type="text" name="kelas"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jenisKelamin" value="Pria">Pria
+                        <input type="radio" name="jenisKelamin" value="Wanita">Wanita
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td valign="top">Alamat</td>
+                    <td>
+                        <textarea name="alamat" rows="5" cols="31" ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="Simpan"></td>
+
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
